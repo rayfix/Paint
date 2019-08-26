@@ -18,6 +18,9 @@ class PaintViewModel: ObservableObject, Identifiable {
     self.green = Self.clamp(green)
     self.blue = Self.clamp(blue)
   }
+}
+
+extension PaintViewModel {
   
   private static func clamp(_ input: Double) -> Double { min(max(input, 0), 1) }
   
@@ -39,14 +42,18 @@ class PaintViewModel: ObservableObject, Identifiable {
     blue = Double.random(in: 0...1)
   }
   
-  private func toHex(_ input: Double) -> String {
-    String(format: "0x%02X", Int((input * 255).rounded(.down)))
+  private static func toHexString(_ input: Double, prefix: Bool = true) -> String {
+    let value = UInt8((input * 255).rounded(.down))
+    return prefix ? String(format: "0x%02X", value) : String(format: "%02X", value)
   }
   
-  var redHex: String { toHex(red) }
-  var greenHex: String { toHex(green) }
-  var blueHex: String { toHex(blue) }
-    
+  var hex: String {
+    redHex + Self.toHexString(green, prefix: false) + Self.toHexString(blue, prefix: false)
+  }
+  
+  var redHex: String { Self.toHexString(red) }
+  var greenHex: String { Self.toHexString(green) }
+  var blueHex: String { Self.toHexString(blue) }
   var color: Color { Color(red: red, green: green, blue: blue) }
 }
 
@@ -56,9 +63,12 @@ struct PaintView: View {
   
   var body: some View {
     VStack {
-      Rectangle()
-        .foregroundColor(viewModel.color)
-        .aspectRatio(1, contentMode: .fit)
+      ZStack {
+        Rectangle()
+          .foregroundColor(viewModel.color)
+          .aspectRatio(1, contentMode: .fit)
+        Text(viewModel.hex).font(.system(.largeTitle, design: .monospaced))
+      }
       Slider(value: $viewModel.red, in: 0...1)
       Slider(value: $viewModel.green, in: 0...1)
       Slider(value: $viewModel.blue, in: 0...1)
