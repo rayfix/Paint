@@ -18,7 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		5D8C349223138C5000E44D95 /* ShowOff.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShowOff.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D8C349223138C5000E44D95 /* Paint.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Paint.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D8C349523138C5000E44D95 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5D8C349723138C5000E44D95 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		5D8C349923138C5000E44D95 /* PaintView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaintView.swift; sourceTree = "<group>"; };
@@ -44,7 +44,7 @@
 		5D8C348923138C5000E44D95 = {
 			isa = PBXGroup;
 			children = (
-				5D8C349423138C5000E44D95 /* ShowOff */,
+				5D8C349423138C5000E44D95 /* Paint */,
 				5D8C349323138C5000E44D95 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -52,12 +52,12 @@
 		5D8C349323138C5000E44D95 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				5D8C349223138C5000E44D95 /* ShowOff.app */,
+				5D8C349223138C5000E44D95 /* Paint.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		5D8C349423138C5000E44D95 /* ShowOff */ = {
+		5D8C349423138C5000E44D95 /* Paint */ = {
 			isa = PBXGroup;
 			children = (
 				5D8C349523138C5000E44D95 /* AppDelegate.swift */,
@@ -70,7 +70,7 @@
 				5D8C34A323138C5200E44D95 /* Info.plist */,
 				5D8C349D23138C5200E44D95 /* Preview Content */,
 			);
-			path = ShowOff;
+			path = Paint;
 			sourceTree = "<group>";
 		};
 		5D8C349D23138C5200E44D95 /* Preview Content */ = {
@@ -84,9 +84,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		5D8C349123138C5000E44D95 /* ShowOff */ = {
+		5D8C349123138C5000E44D95 /* Paint */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5D8C34A623138C5200E44D95 /* Build configuration list for PBXNativeTarget "ShowOff" */;
+			buildConfigurationList = 5D8C34A623138C5200E44D95 /* Build configuration list for PBXNativeTarget "Paint" */;
 			buildPhases = (
 				5D8C348E23138C5000E44D95 /* Sources */,
 				5D8C348F23138C5000E44D95 /* Frameworks */,
@@ -96,9 +96,9 @@
 			);
 			dependencies = (
 			);
-			name = ShowOff;
+			name = Paint;
 			productName = ShowOff;
-			productReference = 5D8C349223138C5000E44D95 /* ShowOff.app */;
+			productReference = 5D8C349223138C5000E44D95 /* Paint.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -116,7 +116,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 5D8C348D23138C5000E44D95 /* Build configuration list for PBXProject "ShowOff" */;
+			buildConfigurationList = 5D8C348D23138C5000E44D95 /* Build configuration list for PBXProject "Paint" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -129,7 +129,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				5D8C349123138C5000E44D95 /* ShowOff */,
+				5D8C349123138C5000E44D95 /* Paint */,
 			);
 		};
 /* End PBXProject section */
@@ -331,7 +331,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		5D8C348D23138C5000E44D95 /* Build configuration list for PBXProject "ShowOff" */ = {
+		5D8C348D23138C5000E44D95 /* Build configuration list for PBXProject "Paint" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5D8C34A423138C5200E44D95 /* Debug */,
@@ -340,7 +340,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5D8C34A623138C5200E44D95 /* Build configuration list for PBXNativeTarget "ShowOff" */ = {
+		5D8C34A623138C5200E44D95 /* Build configuration list for PBXNativeTarget "Paint" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5D8C34A723138C5200E44D95 /* Debug */,
