@@ -293,10 +293,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"ShowOff/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Paint/Preview Content\"";
 				DEVELOPMENT_TEAM = Y2JLK838WQ;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = ShowOff/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Paint/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -313,10 +313,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"ShowOff/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Paint/Preview Content\"";
 				DEVELOPMENT_TEAM = Y2JLK838WQ;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = ShowOff/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Paint/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
