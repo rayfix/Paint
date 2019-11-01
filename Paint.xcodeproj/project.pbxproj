@@ -13,7 +13,7 @@
 		5D8C349C23138C5200E44D95 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5D8C349B23138C5200E44D95 /* Assets.xcassets */; };
 		5D8C349F23138C5200E44D95 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5D8C349E23138C5200E44D95 /* Preview Assets.xcassets */; };
 		5D8C34A223138C5200E44D95 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D8C34A023138C5200E44D95 /* LaunchScreen.storyboard */; };
-		5D8C34AA2314544900E44D95 /* RectangleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D8C34A92314544900E44D95 /* RectangleButton.swift */; };
+		5D8C34AA2314544900E44D95 /* RectangleButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D8C34A92314544900E44D95 /* RectangleButtonStyle.swift */; };
 		5D8C34AC23146D0700E44D95 /* PaintListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D8C34AB23146D0700E44D95 /* PaintListView.swift */; };
 /* End PBXBuildFile section */
 
@@ -26,7 +26,7 @@
 		5D8C349E23138C5200E44D95 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		5D8C34A123138C5200E44D95 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5D8C34A323138C5200E44D95 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5D8C34A92314544900E44D95 /* RectangleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RectangleButton.swift; sourceTree = "<group>"; };
+		5D8C34A92314544900E44D95 /* RectangleButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RectangleButtonStyle.swift; sourceTree = "<group>"; };
 		5D8C34AB23146D0700E44D95 /* PaintListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaintListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -62,7 +62,7 @@
 			children = (
 				5D8C349523138C5000E44D95 /* AppDelegate.swift */,
 				5D8C349723138C5000E44D95 /* SceneDelegate.swift */,
-				5D8C34A92314544900E44D95 /* RectangleButton.swift */,
+				5D8C34A92314544900E44D95 /* RectangleButtonStyle.swift */,
 				5D8C349923138C5000E44D95 /* PaintView.swift */,
 				5D8C34AB23146D0700E44D95 /* PaintListView.swift */,
 				5D8C349B23138C5200E44D95 /* Assets.xcassets */,
@@ -153,7 +153,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5D8C349623138C5000E44D95 /* AppDelegate.swift in Sources */,
-				5D8C34AA2314544900E44D95 /* RectangleButton.swift in Sources */,
+				5D8C34AA2314544900E44D95 /* RectangleButtonStyle.swift in Sources */,
 				5D8C34AC23146D0700E44D95 /* PaintListView.swift in Sources */,
 				5D8C349823138C5000E44D95 /* SceneDelegate.swift in Sources */,
 				5D8C349A23138C5000E44D95 /* PaintView.swift in Sources */,

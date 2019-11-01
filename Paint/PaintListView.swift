@@ -1,6 +1,5 @@
 //
 //  PaintListView.swift
-//  ShowOff
 //
 //  Created by Ray Fix on 8/26/19.
 //  Copyright © 2019 Ray Fix. All rights reserved.
@@ -15,7 +14,6 @@ class PaintListViewModel: ObservableObject {
     self.paints = (1...1000).map { _ in PaintViewModel(red: 0, green: 0, blue: 0) }
     self.paints.forEach { $0.randomize() }
   }
-  
 }
 
 struct PaintListItem: View {
@@ -26,13 +24,13 @@ struct PaintListItem: View {
     HStack {
       viewModel.color.aspectRatio(1, contentMode: .fit).frame(width: 150, height: 150)
       VStack {
-        Text(viewModel.redHex)
-        Text(viewModel.greenHex)
-        Text(viewModel.blueHex)
+        Text(viewModel.redHex).font(.system(.title, design: .monospaced))
+        Text(viewModel.greenHex).font(.system(.title, design: .monospaced))
+        Text(viewModel.blueHex).font(.system(.title, design: .monospaced))
       }
 
       Image(systemName: "star.fill")
-        .imageScale(.small)
+        .imageScale(.large)
         .foregroundColor(.yellow)
     }
   }

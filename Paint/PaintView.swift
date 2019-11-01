@@ -62,6 +62,9 @@ struct PaintView: View {
   @ObservedObject var viewModel: PaintViewModel
   
   var body: some View {
+    
+    //EmptyView()
+    
     VStack {
       ZStack {
         Rectangle()
@@ -74,23 +77,23 @@ struct PaintView: View {
       Slider(value: $viewModel.blue, in: 0...1)
       HStack {
         Spacer()
-        RectangleButton("Darken") {
+        Button("Darken") {
           withAnimation {
             self.viewModel.darken()
           }
-        }
-        RectangleButton("Brighten") {
+        }.buttonStyle(RectangularButtonStyle())
+        Button("Brighten") {
           withAnimation {
             self.viewModel.brighten()
           }
-        }
+        }.buttonStyle(RectangularButtonStyle())
         Spacer()
       }.padding()
-      RectangleButton("Randomize") {
+      Button("Randomize") {
         withAnimation {
           self.viewModel.randomize()
         }
-      }
+      }.buttonStyle(RectangularButtonStyle())
     }.padding()
   }
 }
